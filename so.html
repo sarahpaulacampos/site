@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas Operacionais</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #142b4a;
+      --text: #44546a;
+      --accent: #17365d;
+      --line: #d9e2ec;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 24px;
+      background: #fff;
+      color: var(--text);
+    }
+
+    .page-shell {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .topbar {
+      padding: 30px 30px 22px;
+      margin-bottom: 30px;
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+    }
+
+    .topbar h1 {
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 2.8rem;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    #menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text);
+      background: #fff;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      padding: 9px 13px;
+      font-size: 0.94rem;
+      font-weight: 600;
+      transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      display: inline-block;
+    }
+
+    a:hover,
+    a[aria-current="page"] {
+      background: #dce6f1;
+      border-color: #dce6f1;
+      color: var(--ink);
+    }
+
+    .content-card {
+      padding: 8px 0 30px;
+    }
+
+    h1 {
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin: 0 0 14px;
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    h2 {
+      color: var(--ink);
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      font-weight: 400;
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      max-width: 72ch;
+      line-height: 1.85;
+      font-size: 1rem;
+      margin: 0 0 18px;
+      color: var(--text);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      margin: 12px 0 18px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 18px 20px;
+      }
+
+      .topbar {
+        padding: 22px 18px 18px;
+      }
+
+      .topbar h1 {
+        font-size: 2.3rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <h1>Sistemas Operacionais</h1>
+      <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="personalidades.html">Personalidades</a>
+        <a href="software.html">Software</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="so.html" aria-current="page">Sistemas Operacionais</a>
+      </nav>
+    </header>
+
+    <main class="content-card">
+      <h2>Função de um sistema operacional</h2>
+      <p>O sistema operacional é o software responsável por gerenciar os recursos do computador, como memória, processamento, armazenamento e dispositivos conectados. Ele organiza todas as tarefas do sistema, divide o tempo do processador entre os programas e controla o funcionamento de periféricos, como teclado, mouse, impressora e monitor. Sem ele, o computador não saberia como interpretar os comandos do usuário nem como executar programas corretamente.</p>
+
+      <h2>Exemplos conhecidos</h2>
+      <p>Entre os sistemas operacionais mais populares estão Windows, Linux e macOS. Cada um possui características próprias, como compatibilidade, segurança, desempenho e interface visual. O Windows é muito usado em computadores pessoais, o Linux é bastante utilizado em servidores e ambientes de desenvolvimento e o macOS é encontrado em computadores da Apple, com foco em design e integração com outros dispositivos da marca.</p>
+
+      <h2>Importância</h2>
+      <p>O sistema operacional funciona como o "cérebro" da máquina, coordenando todas as atividades e permitindo que o hardware e os programas trabalhem em conjunto. Ele também cria uma forma simples para o usuário interagir com o computador, como abrir arquivos, instalar aplicativos, acessar a internet e salvar documentos. Em resumo, o sistema operacional é a base que torna a informática acessível e funcional para qualquer pessoa.</p>
+
+      <h2>Como ele ajuda no dia a dia</h2>
+      <p>No cotidiano, o sistema operacional permite que o usuário consiga abrir editor de texto, navegar na internet, ouvir música, usar redes sociais e organizar arquivos. Ele também cuida de tarefas invisíveis, como a gestão da memória, a segurança dos arquivos e a comunicação entre programas e dispositivos.</p>
+
+      <h1>Principais versões de sistemas operacionais</h1>
+
+      <h2>Windows</h2>
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" alt="Windows">
+      <p>O Windows é um sistema operacional desenvolvido pela Microsoft e é um dos mais utilizados no mundo. Sua primeira versão foi lançada em 1985, e ao longo dos anos passou por várias evoluções, como Windows 95, Windows XP, Windows 7, Windows 10 e Windows 11. Cada versão trouxe melhorias em interface, desempenho, segurança e compatibilidade com programas e dispositivos.</p>
+
+      <p>As versões mais conhecidas foram o Windows XP, que marcou uma geração por sua popularidade, o Windows 7, muito apreciado pela estabilidade, e o Windows 10, que se tornou a base do uso moderno. O Windows 11, mais recente, foi pensado para um visual mais moderno, melhor integração com aplicativos e tecnologia de produtividade.</p>
+
+      <h2>Linux</h2>
+      <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Linux">
+      <p>O Linux é um sistema operacional de código aberto, criado por Linus Torvalds em 1991. Ele é conhecido por ser gratuito, flexível e muito usado em servidores, redes, computadores de desenvolvimento e também em desktops. Diferente do Windows, o Linux não é produzido por uma única empresa e tem várias distribuições, como Ubuntu, Fedora, Debian e Mint.</p>
+
+      <p>Entre as versões e distribuições mais importantes, está o Ubuntu, que é muito popular por ser fácil de usar; o Debian, por ser muito estável e usado em servidores; e o Fedora, por oferecer versões mais inovadoras e com tecnologias recentes. O Linux também é conhecido por sua segurança e por permitir alto controle do sistema.</p>
+
+      <h2>macOS</h2>
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="macOS">
+      <p>O macOS é o sistema operacional da Apple, desenvolvido para computadores Mac. Ele tem um visual mais elegante e é conhecido por sua interface simples, boa integração com outros dispositivos da marca e excelente desempenho em design, edição de vídeos, música e produtividade.</p>
+
+      <p>O macOS passou por várias versões ao longo do tempo, como macOS Catalina, Big Sur, Monterey e Sonoma. Essas versões trouxeram melhorias em segurança, desempenho, organização de arquivos, integração com aplicativos e suporte para novos aparelhos Apple. O sistema é muito valorizado por quem busca estabilidade, rapidez e uma experiência mais refinada.</p>
+
+      <h2>Comparação entre Windows, Linux e macOS</h2>
+      <p>O Windows é mais usado em computadores comuns e tem grande compatibilidade com programas e jogos. O Linux é muito forte em liberdade, personalização e uso em servidores e ambientes técnicos. Já o macOS é preferido por quem valoriza design, integração com o ecossistema Apple e facilidade de uso.</p>
+
+      <p>Cada sistema operacional atende a necessidades diferentes. A escolha depende do tipo de computador, da finalidade do uso, do nível de conhecimento do usuário e da compatibilidade com os aplicativos desejados.</p>
+    </main>
+  </div>
+</body>
+</html>

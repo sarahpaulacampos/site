@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hardware</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #142b4a;
+      --text: #44546a;
+      --accent: #17365d;
+      --line: #d9e2ec;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 24px;
+      background: #fff;
+      color: var(--text);
+    }
+
+    .page-shell {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .topbar {
+      padding: 30px 30px 22px;
+      margin-bottom: 30px;
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+    }
+
+    .topbar h1 {
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 2.8rem;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    #menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text);
+      background: #fff;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      padding: 9px 13px;
+      font-size: 0.94rem;
+      font-weight: 600;
+      transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      display: inline-block;
+    }
+
+    a:hover,
+    a[aria-current="page"] {
+      background: #dce6f1;
+      border-color: #dce6f1;
+      color: var(--ink);
+    }
+
+    .content-card {
+      padding: 8px 0 30px;
+    }
+
+    h1 {
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin: 0 0 14px;
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    h2 {
+      color: var(--ink);
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      font-weight: 400;
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      max-width: 72ch;
+      line-height: 1.85;
+      font-size: 1rem;
+      margin: 0 0 18px;
+      color: var(--text);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      margin: 12px 0 18px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 18px 20px;
+      }
+
+      .topbar {
+        padding: 22px 18px 18px;
+      }
+
+      .topbar h1 {
+        font-size: 2.3rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <h1>Hardware</h1>
+      <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="personalidades.html">Personalidades</a>
+        <a href="software.html">Software</a>
+        <a href="hardware.html" aria-current="page">Hardware</a>
+        <a href="so.html">Sistemas Operacionais</a>
+      </nav>
+    </header>
+
+    <main class="content-card">
+      <h2>O que é hardware?</h2>
+      <p>Hardware é o conjunto de componentes físicos de um computador, como processador, memória, placa-mãe, disco rígido ou SSD, teclado, mouse e monitor. Esses elementos são responsáveis por executar as ações do sistema e permitir que os programas funcionem de forma correta. Sem o hardware, o software não teria como processar dados, armazenar informações ou se comunicar com o usuário.</p>
+
+      <h2>Componentes principais</h2>
+      <p>O processador, também chamado de CPU, é o cérebro do computador, pois executa instruções e realiza cálculos muito rapidamente. A memória RAM guarda dados temporários que estão sendo usados no momento, como arquivos abertos e processos em execução. O armazenamento em SSD ou HD mantém as informações de forma permanente, como documentos, fotos e programas instalados. Já a placa de vídeo é responsável por processar imagens e também ajuda no desempenho de jogos e programas de edição.</p>
+
+      <h2>Importância do hardware</h2>
+      <p>Um bom hardware influencia diretamente na velocidade, no desempenho e na estabilidade do computador. Equipamentos mais potentes permitem abrir vários programas ao mesmo tempo, executar jogos pesados, editar vídeos e realizar tarefas profissionais com mais eficiência. Por isso, entender o hardware é essencial para escolher um computador adequado às necessidades de cada pessoa.</p>
+
+      <h2>Hardware e software trabalhando juntos</h2>
+      <p>O hardware e o software dependem um do outro. O hardware fornece a estrutura física e os recursos de processamento, enquanto o software organiza as instruções e comandos que fazem o computador funcionar. Por exemplo, quando você abre um navegador, o software solicita que o processador e a memória executem essa tarefa, e o monitor mostra o resultado para você.</p>
+
+      <h1>Principais tipos e evoluções do hardware</h1>
+
+      <h2>Processador</h2>
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Processador">
+      <p>O processador, também conhecido como CPU, é o principal componente de cálculo do computador. Ele executa cálculos, interpreta instruções e coordena as ações que o sistema precisa realizar. Processadores antigos eram mais lentos e menos eficientes, enquanto os modernos têm alta velocidade, vários núcleos e muito melhor desempenho.</p>
+
+      <p>Hoje, os processadores possuem múltiplos núcleos, o que permite realizar várias tarefas ao mesmo tempo com mais eficiência. Essa evolução foi importante para o uso de jogos, edição de vídeo, inteligência artificial e softwares mais pesados.</p>
+
+      <h2>Memória RAM</h2>
+      <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80" alt="Memória RAM">
+      <p>A memória RAM é responsável por armazenar temporariamente os dados que o computador está usando naquele momento. Quando você abre um programa, a RAM guarda as informações necessárias para sua execução. Quanto mais RAM o sistema tiver, melhor ele consegue lidar com várias tarefas ao mesmo tempo sem travar ou ficar lento.</p>
+
+      <p>Ao longo do tempo, a RAM evoluiu em capacidade, velocidade e eficiência, permitindo computadores mais rápidos e com melhor desempenho geral.</p>
+
+      <h2>Disco rígido e SSD</h2>
+      <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=900&q=80" alt="SSD e HD">
+      <p>O disco rígido (HD) e o SSD são utilizados para armazenar arquivos permanentemente, como documentos, fotos, vídeos e programas. O HD é mais tradicional e usa discos físicos para gravar dados, enquanto o SSD usa memória flash e é muito mais rápido.</p>
+
+      <p>O SSD tornou-se muito popular porque oferece maior velocidade de leitura e escrita, além de ser mais silencioso e eficiente em energia. Essa diferença melhora bastante a experiência de uso do computador.</p>
+
+      <h2>Placa de vídeo</h2>
+      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Placa de vídeo">
+      <p>A placa de vídeo é responsável por processar imagens e vídeos, além de ajudar em jogos e programas gráficos. Ela é essencial para quem trabalha com edição de vídeos, design gráfico, animação, modelagem 3D e também para quem gosta de jogar games com boa qualidade visual.</p>
+
+      <p>Com o avanço da tecnologia, as placas de vídeo ficaram muito mais potentes, permitindo renderização de imagens em alta qualidade e desempenho superior.</p>
+
+      <h2>Placa-mãe</h2>
+      <img src="https://images.unsplash.com/photo-1555617117-08d4a0f6072e?auto=format&fit=crop&w=900&q=80" alt="Placa-mãe">
+      <p>A placa-mãe é a base que conecta os principais componentes do computador, como processador, memória, SSD, placa de vídeo e outros dispositivos. Ela permite que todos trabalhem juntos, funcionando como uma central de comunicação entre as partes do sistema.</p>
+
+      <p>Uma boa placa-mãe também oferece suporte a portas, conectores e recursos importantes para melhorar a compatibilidade e o desempenho do computador.</p>
+
+      <h2>Evolução do hardware</h2>
+      <p>Ao longo dos anos, o hardware evoluiu muito. Antigamente, os computadores eram grandes, lentos, caros e tinham pouca capacidade de armazenamento. Hoje, eles são menores, mais rápidos, mais leves e muito mais poderosos.</p>
+
+      <p>Essa evolução fez com que a informática se tornasse acessível para escolas, empresas e pessoas comuns. A tecnologia moderna permite o uso de computadores para estudo, comunicação, trabalho, música, vídeos, jogos e muitas outras atividades do cotidiano.</p>
+
+      <h2>Conclusão</h2>
+      <p>O hardware é a parte física do computador e é responsável por executar tudo que o software pede. Entender cada componente ajuda a escolher um equipamento melhor, a resolver problemas técnicos e a entender como a tecnologia funciona no dia a dia.</p>
+    </main>
+  </div>
+</body>
+</html>

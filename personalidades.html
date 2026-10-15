@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalidades</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #142b4a;
+      --text: #44546a;
+      --accent: #17365d;
+      --line: #d9e2ec;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 24px;
+      background: #fff;
+      color: var(--text);
+    }
+
+    .page-shell {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .topbar {
+      padding: 30px 30px 22px;
+      margin-bottom: 30px;
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+    }
+
+    .topbar h1 {
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 2.8rem;
+      line-height: 1.15;
+      margin: 0 0 14px;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    #menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text);
+      background: #fff;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      padding: 9px 13px;
+      font-size: 0.94rem;
+      font-weight: 600;
+      transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      display: inline-block;
+    }
+
+    a:hover,
+    a[aria-current="page"] {
+      background: #dce6f1;
+      border-color: #dce6f1;
+      color: var(--ink);
+    }
+
+    .content-card {
+      padding: 8px 0 30px;
+    }
+
+    h1 {
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin: 0 0 14px;
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    h2 {
+      color: var(--ink);
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      font-weight: 400;
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      margin: 12px 0 18px;
+      border-radius: 2px;
+    }
+
+    p {
+      max-width: 72ch;
+      line-height: 1.85;
+      font-size: 1rem;
+      margin: 0 0 18px;
+      color: var(--text);
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 18px 20px;
+      }
+
+      .topbar {
+        padding: 22px 18px 18px;
+      }
+
+      .topbar h1 {
+        font-size: 2.3rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <h1>Personalidades</h1>
+      <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="personalidades.html" aria-current="page">Personalidades</a>
+        <a href="software.html">Software</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="so.html">Sistemas Operacionais</a>
+      </nav>
+    </header>
+
+    <main class="content-card">
+      <h2>Bill Gates</h2>
+      <img src="imagens/Bill Gates.jpg" alt="Bill Gates">
+      <p>Bill Gates é um empresário e programador norte-americano, nascido em 28 de outubro de 1955. Ele é um dos fundadores da Microsoft, empresa criada em 1975 junto com Paul Allen. Gates contribuiu para a popularização dos computadores pessoais por meio do desenvolvimento de softwares. Além disso, dedica-se a projetos sociais nas áreas da saúde, educação e combate à pobreza.</p>
+
+      <h2>Steve Jobs</h2>
+      <img src="imagens/steve.jpg" alt="Steve Jobs">
+      <p>Steve Jobs foi um empresário e inventor norte-americano, nascido em 24 de fevereiro de 1955. Ele foi um dos fundadores da Apple, em 1976, junto com Steve Wozniak e Ronald Wayne. Jobs ficou conhecido por contribuir para a criação de produtos inovadores, como o Macintosh, o iPod, o iPhone e o iPad. Ele faleceu em 5 de outubro de 2011, deixando um importante legado para a tecnologia.</p>
+
+      <h2>Linus Torvalds</h2>
+      <img src="imagens/linus.jpg" alt="Linus Torvalds">
+      <p>Linus Torvalds é um engenheiro de software e programador finlandês, nascido em 28 de dezembro de 1969. Ele é conhecido por criar o núcleo do sistema operacional Linux em 1991, utilizado em servidores, computadores e diversos dispositivos. Também desenvolveu o Git, uma ferramenta utilizada por programadores para controlar as alterações em projetos de software. Suas contribuições foram muito importantes para o desenvolvimento da informática e dos programas de código aberto.</p>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #142b4a;
+      --text: #44546a;
+      --muted: #d7e1ee;
+      --accent: #17365d;
+      --line: #d9e2ec;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 24px;
+      background: #fff;
+      color: var(--text);
+    }
+
+    .page-shell {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .topbar {
+      padding: 30px 30px 22px;
+      margin-bottom: 30px;
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+    }
+
+    .topbar h1 {
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 3.25rem;
+      line-height: 1.12;
+      margin: 0 0 12px;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    #menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text);
+      background: #fff;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      padding: 9px 13px;
+      font-size: 0.94rem;
+      font-weight: 600;
+      transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+      display: inline-block;
+    }
+
+    a:hover,
+    a[aria-current="page"] {
+      background: #dce6f1;
+      border-color: #dce6f1;
+      color: var(--ink);
+    }
+
+    main h1 {
+      font-family: "TAN Nimbus", Georgia, "Times New Roman", serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    .content-card {
+      padding: 8px 0 30px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 0.9fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    p {
+      max-width: 66ch;
+      line-height: 1.85;
+      font-size: 1rem;
+      margin: 0 0 16px;
+      color: var(--text);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+      border-radius: 2px;
+    }
+
+    .project-owner {
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .intro {
+      color: #294c73;
+      font-size: 1.12rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 18px 20px;
+      }
+
+      .topbar {
+        padding: 22px 18px 18px;
+      }
+
+      .topbar h1 {
+        font-size: 2.35rem;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <p class="project-owner">Projeto de Sarah Victória Campos de Paula</p>
+      <h1>Tecnologia em perspectiva</h1>
+      <p class="intro">Pessoas, ideias e sistemas que dão forma ao mundo digital.</p>
+      <nav id="menu">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="personalidades.html">Personalidades</a>
+        <a href="software.html">Software</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="so.html">Sistemas Operacionais</a>
+      </nav>
+    </header>
+
+    <main class="content-card">
+      <div class="content-grid">
+        <div>
+          <p>Este projeto apresenta uma visão geral sobre tecnologia, reunindo personalidades que marcaram a informática e conceitos essenciais de software, hardware e sistemas operacionais. Uma leitura sobre as ideias, ferramentas e componentes que tornam possível a experiência digital.</p>
+          <p>Ao longo das páginas, você vai entender melhor o papel de cada tema: como o software organiza as tarefas, como o hardware realiza os cálculos e como o sistema operacional conecta tudo isso para que o usuário consiga usar o computador de forma prática e segura.</p>
+        </div>
+        <img src="imagens/gatinho.avif" alt="Gatinho">
+      </div>
+    </main>
+  </div>
+</body>
+</html>
